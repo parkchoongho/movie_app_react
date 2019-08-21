@@ -1,11 +1,14 @@
 import React from "react";
-import Potato from "./Potato";
+
+function Movie({ name }) {
+  return <h1>I Like {name}</h1>;
+}
 
 function App() {
   return (
     <div>
       <h1>Hello</h1>
-      <Potato />
+      <Movie name="Titanic" />
     </div>
   );
 }
